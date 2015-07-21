@@ -42,6 +42,8 @@ var plantuml = require('node-plantuml');
 
 var app = express();
 
+plantuml.useNailgun(); // Activate the usage of Nailgun
+
 app.get('/png/:uml', function(req, res) {
   res.set('Content-Type', 'image/png');
 
