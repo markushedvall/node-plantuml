@@ -11,13 +11,13 @@ Install [Graphviz](http://www.graphviz.org/) to be able to generate all diagram 
 # Install
 
 ```
-npm install node-nailgun-server
+npm install node-plantuml
 ```
 
 If you want to use the CLI node-plantuml can be install it globally:
 
 ```
-npm install node-nailgun-server -g
+npm install node-plantuml -g
 ```
 
 # Example
