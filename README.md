@@ -2,7 +2,7 @@
 
 A Node.js module and CLI for running [PlantUML](http://plantuml.sourceforge.net/).
 
-PlantUML is a popular diagramming tool that uses simple textual descriptions to draw UML diagrams. With the API provided by this module you can easily generate PlantUML diagrams directly from your Node.js application. It can also be used to encode and decode PlantUML source files.
+[PlantUML](http://plantuml.sourceforge.net/) is a popular diagramming tool that uses simple textual descriptions to draw UML diagrams. With the API provided by this module you can easily generate PlantUML diagrams directly from your Node.js application. It can also be used to encode and decode PlantUML source files.
 
 This module also provides an easy to use and flexible command line interface for doing the same kind of operations as enabled by the API.
 
