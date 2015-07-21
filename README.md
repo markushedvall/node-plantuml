@@ -61,6 +61,8 @@ app.get('/svg/:uml', function(req, res) {
   decode.out.pipe(gen.in);
   gen.out.pipe(res);
 });
+
+app.listen(8080);
 ```
 
 # CLI
