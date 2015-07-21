@@ -1,0 +1,31 @@
+'General styling
+skinparam shadowing false
+hide circle
+
+skinparam noteBackgroundColor White
+skinparam noteBorderColor Black
+
+'Class diagram styling
+skinparam packageBackgroundColor White
+skinparam packageBorderColor Black
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor White
+  ArrowColor Black
+  BorderColor Black
+}
+
+'Sequence diagram styling
+skinparam sequence {
+  ArrowColor Black
+  ParticipantBorderColor Black
+  ParticipantBackgroundColor White
+  LifeLineBorderColor Black
+}
+
+'Use case diagram styling
+skinparam usecase {
+  BackgroundColor White
+  ArrowColor Black
+  BorderColor Black
+}
