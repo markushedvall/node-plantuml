@@ -4,7 +4,13 @@
   "description": "A Node.js module and CLI for running PlantUML",
   "main": "index.js",
   "author": "Markus Hedvall <mackanhedvall@gmail.com>",
+  "repository": "https://github.com/markushedvall/node-nailgun-server",
   "license": "MIT",
+  "tags": [
+    "plantuml",
+    "uml",
+    "diagram"
+  ],
   "dependencies": {
     "commander": "^2.8.1",
     "node-nailgun-client": "^0.1.0",
