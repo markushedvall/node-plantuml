@@ -48,7 +48,7 @@ app.get('/png/:uml', function(req, res) {
   res.set('Content-Type', 'image/png');
 
   var decode = plantuml.decode(req.params.uml);
-  var gen = plantuml.generate({output: 'png'});
+  var gen = plantuml.generate({format: 'png'});
 
   decode.out.pipe(gen.in);
   gen.out.pipe(res);
@@ -58,7 +58,7 @@ app.get('/svg/:uml', function(req, res) {
   res.set('Content-Type', 'image/svg+xml');
 
   var decode = plantuml.decode(req.params.uml);
-  var gen = plantuml.generate({output: 'svg'});
+  var gen = plantuml.generate({format: 'svg'});
 
   decode.out.pipe(gen.in);
   gen.out.pipe(res);
@@ -70,17 +70,17 @@ app.listen(8080);
 # CLI
 
 The node-plantuml CLI can be accessed with the puml command.
-```
+```shell
 puml generate file.puml -o file.png
 ```
 
 It's also possible to use stdin and stdout for input and output.
-```
+```shell
 puml decode UDfpLD2rKt0200GS0Iy0 | puml generate > file.png
 ```
 
 Simple textual one-liners can also be used as input.
-```
+```shell
 puml generate --unicode --text "A -> B: Hello"
     ┌─┐          ┌─┐
     │A│          │B│
