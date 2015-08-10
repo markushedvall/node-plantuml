@@ -18,8 +18,10 @@
     "plantuml-encoder": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^0.24.0",
-    "jscs": "^1.13.1"
+    "standard": "^5.0.2"
+  },
+  "scripts": {
+    "test": "standard"
   },
   "bin": {
     "puml": "index.js"

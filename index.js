@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 
 if (require.main === module) {
-  require('./lib/node-plantuml-cmd');
+  require('./lib/node-plantuml-cmd')
 } else {
-  module.exports = require('./lib/node-plantuml');
+  module.exports = require('./lib/node-plantuml')
 }
