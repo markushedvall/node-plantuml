@@ -104,6 +104,7 @@ Commands:
   generate [options] [file]  Generate an UML diagram from PlantUML source
   encode [options] [file]    Encodes PlantUML source
   decode <url>               Decodes PlantUML source
+  testdot                    Test the installation of Graphviz dot
 
 Options:
 
