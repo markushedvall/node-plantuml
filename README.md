@@ -119,14 +119,17 @@ Generate an UML diagram from PlantUML source
 
 Options:
 
-  -h, --help           output usage information
-  -p, --png            ouput an UML diagram as a PNG image
-  -s, --svg            ouput an UML diagram as an SVG image
-  -u, --unicode        ouput an UML diagram in unicode text
-  -a, --ascii          ouput an UML diagram in ASCII text
-  -o --output [file]   the file in which to save the diagram
-  -c, --config [file]  config file read before the diagram
-  -t, --text [text]    UML text to generate from
+-h, --help            output usage information
+-p, --png             ouput an UML diagram as a PNG image
+-s, --svg             ouput an UML diagram as an SVG image
+-e, --eps             ouput an UML diagram as an EPS image
+-u, --unicode         ouput an UML diagram in unicode text
+-a, --ascii           ouput an UML diagram in ASCII text
+-o --output [file]    the file in which to save the diagram
+-c, --config [file]   config file read before the diagram
+-t, --text [text]     UML text to generate from
+-d, --dot [file]      specify Graphviz dot executable
+-i, --include [path]  specify the path to include from
 ```
 
 ```

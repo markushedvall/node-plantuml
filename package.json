@@ -18,10 +18,12 @@
     "plantuml-encoder": "^1.1.0"
   },
   "devDependencies": {
+    "shelljs": "^0.5.3",
     "standard": "^5.0.2"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "node nail/build.js"
   },
   "bin": {
     "puml": "index.js"
