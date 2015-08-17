@@ -13,6 +13,7 @@ public class PlantumlNail {
       File cwd = new File(context.getWorkingDirectory());
       FileSystem.getInstance().setCurrentDir(cwd);
       Run.main(context.getArgs());
+      context.exit(0);
     }
   }
 }
