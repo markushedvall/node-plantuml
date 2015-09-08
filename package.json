@@ -24,7 +24,7 @@
     "standard": "^5.0.2"
   },
   "scripts": {
-    "test": "standard && mocha",
+    "test": "standard && node test/fixtures/prepare.js && mocha",
     "build": "node nail/build.js"
   },
   "bin": {
