@@ -31,7 +31,7 @@ var plantuml = require('node-plantuml');
 var fs = require('fs');
 
 var gen = plantuml.generate("input-file");
-gen.out.pipe(fs.createWriteStream("output-file.png");
+gen.out.pipe(fs.createWriteStream("output-file.png"));
 ```
 
 If your application will be making multiple PlantUML requests, it might be a good idea to enable the usage of Nailgun.
