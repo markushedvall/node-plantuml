@@ -32,6 +32,19 @@ describe('node-plantuml', function () {
         done()
       })
     })
+    it('should generate to png when there are no options', function (done) {
+      var expectedBuffer = fs.readFileSync(TEST_PNG)
+      var gen = plantuml.generate(TEST_PUML)
+
+      var chunks = []
+      gen.out.on('data', function (chunk) { chunks.push(chunk) })
+      gen.out.on('end', function () {
+        var buffer = Buffer.concat(chunks)
+        var eq = isBuffersEqual(buffer, expectedBuffer)
+        expect(eq).to.equal(true)
+        done()
+      })
+    })
   })
   describe('#encode()', function () {
     it('should encode "A -> B: Hello"', function (done) {
