@@ -24,7 +24,7 @@
     "standard": "^5.0.2"
   },
   "scripts": {
-    "test": "standard && node test/fixtures/prepare.js && mocha",
+    "test": "standard && node test/fixtures/prepare.js && mocha --timeout 5000",
     "build": "node nail/build.js"
   },
   "bin": {
