@@ -50,7 +50,7 @@ describe('node-plantuml', function () {
     it('should encode "A -> B: Hello"', function (done) {
       plantuml.encode('A -> B: Hello', function (err, encoded) {
         expect(err).to.equal(null)
-        expect(encoded).to.equal('UDfpLD2rKt2oKl18pSd91m0KGWDz')
+        expect(encoded).to.equal('SrJGjLDmibBmICt9oGS0')
         done()
       })
     })
