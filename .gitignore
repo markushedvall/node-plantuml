@@ -2,5 +2,6 @@
 npm-debug.log
 package-lock.json
 node_modules/
+vendor/
 
 test/fixtures/*.png
