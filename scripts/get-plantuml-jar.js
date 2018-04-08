@@ -38,6 +38,7 @@ function download (uri, filename) {
         console.error(line)
       })
       console.error('Failed to download plantuml.jar')
+      process.exitCode = 1
     }
   })
 }
