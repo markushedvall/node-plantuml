@@ -25,7 +25,7 @@
     "chai": "^3.2.0",
     "mocha": "^2.3.1",
     "shelljs": "^0.5.3",
-    "standard": "^5.0.2"
+    "standard": "^11.x"
   },
   "scripts": {
     "postinstall": "node scripts/get-plantuml-jar.js",
