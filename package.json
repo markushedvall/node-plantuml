@@ -19,7 +19,8 @@
     "commander": "^2.8.1",
     "node-nailgun-client": "^0.1.0",
     "node-nailgun-server": "^0.1.3",
-    "plantuml-encoder": "^1.2.5"
+    "plantuml-encoder": "^1.2.5",
+    "safe-buffer": "^5.1.2"
   },
   "devDependencies": {
     "chai": "^3.2.0",
