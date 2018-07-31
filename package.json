@@ -1,7 +1,7 @@
 {
   "name": "node-plantuml",
   "version": "0.6.2",
-  "plantumlVersion": "1.2018.2",
+  "plantumlVersion": "1.2018.9",
   "description": "A Node.js module and CLI for running PlantUML",
   "main": "index.js",
   "author": "Markus Hedvall <mackanhedvall@gmail.com>",
