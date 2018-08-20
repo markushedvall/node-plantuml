@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "chai": "^3.2.0",
-    "mocha": "^2.3.1",
+    "mocha": "^5.x",
     "shelljs": "^0.5.3",
     "standard": "^11.x"
   },
