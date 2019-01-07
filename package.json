@@ -28,7 +28,7 @@
     "standard": "^11.x"
   },
   "scripts": {
-    "prepublish": "node scripts/get-plantuml-jar.js",
+    "postinstall": "node scripts/get-plantuml-jar.js",
     "test": "standard && node test/fixtures/prepare.js && mocha",
     "build": "node nail/build.js"
   },
