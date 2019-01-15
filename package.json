@@ -29,6 +29,7 @@
   },
   "scripts": {
     "prepublish": "node scripts/get-plantuml-jar.js",
+    "postinstall": "node scripts/get-vizjs.js",
     "test": "standard && node test/fixtures/prepare.js && mocha",
     "build": "node nail/build.js"
   },
