@@ -22,10 +22,10 @@
     "plantuml-encoder": "^1.2.5"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
+    "chai": "^4.x",
     "mocha": "^5.x",
-    "shelljs": "^0.5.3",
-    "standard": "^11.x"
+    "standard": "^12.x",
+    "shelljs": "^0.8.x"
   },
   "scripts": {
     "prepublish": "node scripts/get-plantuml-jar.js",
