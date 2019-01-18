@@ -27,6 +27,15 @@
     "standard": "^12.x",
     "shelljs": "^0.8.x"
   },
+  "files": [
+    "index.js",
+    "lib/",
+    "vendor/plantuml.jar",
+    "resources/",
+    "nail/plantumlnail.jar",
+    "scripts/download.js",
+    "scripts/get-vizjs.js"
+  ],
   "scripts": {
     "prepublish": "node scripts/get-plantuml-jar.js",
     "postinstall": "node scripts/get-vizjs.js",
