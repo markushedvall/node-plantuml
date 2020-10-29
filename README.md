@@ -10,19 +10,19 @@ This module also provides an easy to use and flexible command line interface for
 
 Install [Graphviz](http://www.graphviz.org/) to be able to generate all diagram types.
 
-# Install
+## Install
 
-```
+```shell
 npm install node-plantuml
 ```
 
 If you want to use the CLI node-plantuml can be install it globally:
 
-```
+```shell
 npm install node-plantuml -g
 ```
 
-# Example
+## Example
 
 Diagrams can be created from source files.
 
@@ -69,19 +69,22 @@ app.get('/svg/:uml', function(req, res) {
 app.listen(8080);
 ```
 
-# CLI
+## CLI
 
 The node-plantuml CLI can be accessed with the puml command.
+
 ```shell
 puml generate file.puml -o file.png
 ```
 
 It's also possible to use stdin and stdout for input and output.
+
 ```shell
 puml decode UDfpLD2rKt0200GS0Iy0 | puml generate > file.png
 ```
 
 Simple textual one-liners can also be used as input.
+
 ```shell
 puml generate --unicode --text "A -> B: Hello"
     ┌─┐          ┌─┐
@@ -95,7 +98,8 @@ puml generate --unicode --text "A -> B: Hello"
 ```
 
 There are multiple options for input and for output. And the output can be in multiple different formats.
-```
+
+```text
 Usage: puml [options] [command]
 
 
@@ -112,7 +116,7 @@ Options:
   -V, --version  output the version number
 ```
 
-```
+```text
 Usage: generate [options] [file]
 
 Generate an UML diagram from PlantUML source
@@ -133,7 +137,7 @@ Options:
   -C, --charset [charset]  specify the charset of PlantUML source
 ```
 
-```
+```text
 Usage: encode [options] [file]
 
 Encodes PlantUML source
@@ -144,7 +148,7 @@ Options:
   -t, --text [text]  UML text to encode
 ```
 
-```
+```text
 Usage: decode [options] <url>
 
 Decodes PlantUML source
@@ -154,13 +158,14 @@ Options:
   -h, --help  output usage information
 ```
 
-# Config templates
+## Config templates
 
 With predefined configuration templates the looks of the diagrams can be altered. For a more classic black and white look the classic configuration template can be used.
-![alt tag](http://www.plantuml.com/plantuml/img/UDgjb3rFmp0GXdV_YjjeGK7C3AWV0qAg0Ab2B2oESqcFkdOvErIbyDznqxfVILi6rhl7zxxlsKd7USc-d6WXBkxH84iDpiyrcKAuCPcfP3a1DvAPdOKQv58x52FA41InqYXsC6CzzgGQ5snBa_MjjWol8_9uo5ZEa5VzdWu7WdXVI-SW8rbKWZKBqu39ukpuYDKKjeXQAdMzPqfBZm_AcY5z8TmS8h0G0Crw05rcEzkT7z2Qva_8DSIF4et24z5SH1RDWv_33P6YgJI-hh7VFk9sG3aEo62pnHSNBbEwKnPBXnNn7ojPBVSfTSYVoDN8g-Mpe7pUQc-1lZMAqMC4ktycUqV9OPc-e_BhlbtpmPyELRAcAZCMv3no7DUANBjgb-OCi9ADJRVIhwT9ak-xpHP4FSD-Fpg_J99jKJo6ZmbIwxsTWCrZlDkw1NWpa8TBY4w1J4Fyy0gqtjIlD_iJ7JJPyX_n2m4TUEG0)
+![alt tag](http://www.plantuml.com/plantuml/img/~1UDgjb3rFmp0GXdV_YjjeGK7C3AWV0qAg0Ab2B2oESqcFkdOvErIbyDznqxfVILi6rhl7zxxlsKd7USc-d6WXBkxH84iDpiyrcKAuCPcfP3a1DvAPdOKQv58x52FA41InqYXsC6CzzgGQ5snBa_MjjWol8_9uo5ZEa5VzdWu7WdXVI-SW8rbKWZKBqu39ukpuYDKKjeXQAdMzPqfBZm_AcY5z8TmS8h0G0Crw05rcEzkT7z2Qva_8DSIF4et24z5SH1RDWv_33P6YgJI-hh7VFk9sG3aEo62pnHSNBbEwKnPBXnNn7ojPBVSfTSYVoDN8g-Mpe7pUQc-1lZMAqMC4ktycUqV9OPc-e_BhlbtpmPyELRAcAZCMv3no7DUANBjgb-OCi9ADJRVIhwT9ak-xpHP4FSD-Fpg_J99jKJo6ZmbIwxsTWCrZlDkw1NWpa8TBY4w1J4Fyy0gqtjIlD_iJ7JJPyX_n2m4TUEG0)
 
 Compared to the standard PlantUML look:
-![alt tag](http://www.plantuml.com/plantuml/img/UDgDaJ4EmZ0CHVUSmcCB2WTWG8NkCB2ofC55GMai9IuI0kuEj4qGAWZM_vzYFwS8h3otZHL2MnK2RAg0_eGUBW9W2exOrESi5xS8bEIqHyO8BlycLr_9RLiTKVFGqy2NPEqZDUIwsEF114OVdyiYbtTrwtu0_TXOXdx-s4RAwo9TGOmTtlku-KJALoZMn0WLCLC3L4Uz-NW5s3ceoITbCEw3FcXbRSfdwNwYGBT__jqTLUUSCW00)
+![alt tag](http://www.plantuml.com/plantuml/img/~1UDgDaJ4EmZ0CHVUSmcCB2WTWG8NkCB2ofC55GMai9IuI0kuEj4qGAWZM_vzYFwS8h3otZHL2MnK2RAg0_eGUBW9W2exOrESi5xS8bEIqHyO8BlycLr_9RLiTKVFGqy2NPEqZDUIwsEF114OVdyiYbtTrwtu0_TXOXdx-s4RAwo9TGOmTtlku-KJALoZMn0WLCLC3L4Uz-NW5s3ceoITbCEw3FcXbRSfdwNwYGBT__jqTLUUSCW00)
 
-# License
+## License
+
 MIT
