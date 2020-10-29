@@ -37,8 +37,9 @@
     "scripts/get-vizjs.js"
   ],
   "scripts": {
-    "prepublish": "node scripts/get-plantuml-jar.js",
-    "postinstall": "node scripts/get-vizjs.js",
+    "getpuml": "node scripts/get-plantuml-jar.js",
+    "prepublish": "npm run getpuml",
+    "postinstall": "npm run getpuml && node scripts/get-vizjs.js",
     "test": "standard && node test/fixtures/prepare.js && mocha",
     "build": "node nail/build.js"
   },
