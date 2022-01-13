@@ -1,5 +1,5 @@
 @startuml
-
+!theme spacelab
 A -> B
 
 @enduml

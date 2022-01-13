@@ -1,7 +1,7 @@
 {
   "name": "node-plantuml",
-  "version": "0.9.0",
-  "plantumlVersion": "1.2019.6",
+  "version": "0.9.0-1",
+  "plantumlVersion": "1.2022.0",
   "description": "A Node.js module and CLI for running PlantUML",
   "main": "index.js",
   "author": "Markus Hedvall <mackanhedvall@gmail.com>",
@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "chai": "^4.x",
-    "mocha": "^5.x",
-    "standard": "^12.x",
-    "shelljs": "^0.8.x"
+    "mocha": "^5.2.0",
+    "shelljs": "^0.8.x",
+    "standard": "^12.0.1"
   },
   "files": [
     "index.js",
