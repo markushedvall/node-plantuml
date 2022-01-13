@@ -22,10 +22,10 @@
     "plantuml-encoder": "^1.2.5"
   },
   "devDependencies": {
-    "chai": "^4.x",
-    "mocha": "^5.2.0",
-    "shelljs": "^0.8.x",
-    "standard": "^12.0.1"
+    "chai": "^4",
+    "mocha": "^5",
+    "standard": "^12",
+    "shelljs": "^0.8"
   },
   "files": [
     "index.js",
