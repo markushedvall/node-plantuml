@@ -1,7 +1,7 @@
 {
   "name": "node-plantuml",
   "version": "0.9.0",
-  "plantumlVersion": "1.2019.6",
+  "plantumlVersion": "1.2022.1",
   "description": "A Node.js module and CLI for running PlantUML",
   "main": "index.js",
   "author": "Markus Hedvall <mackanhedvall@gmail.com>",
@@ -38,7 +38,6 @@
   ],
   "scripts": {
     "prepublish": "node scripts/get-plantuml-jar.js",
-    "postinstall": "node scripts/get-vizjs.js",
     "test": "standard && node test/fixtures/prepare.js && mocha",
     "build": "node nail/build.js"
   },
