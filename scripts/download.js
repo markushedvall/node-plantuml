@@ -1,18 +1,18 @@
 'use strict'
 
-var url = require('url')
-var fs = require('fs')
+const { URL } = require('url')
+const fs = require('fs')
 
-var trace = []
+const trace = []
 module.exports = function download (uri, filename, changeExitCodeOnError, callback) {
   trace.push('GET ' + uri)
-  var protocol = url.parse(uri).protocol.slice(0, -1)
+  const protocol = new URL(uri).protocol.slice(0, -1)
 
   require(protocol).get(uri, function (res) {
     trace.push('Reponse: ' + res.statusCode)
     if (res.statusCode === 200) {
       // Success, pipe to file
-      var fileStream = fs.createWriteStream(filename)
+      const fileStream = fs.createWriteStream(filename)
       res.pipe(fileStream)
       if (callback) {
         res.on('end', function () {
@@ -27,7 +27,7 @@ module.exports = function download (uri, filename, changeExitCodeOnError, callba
       trace.forEach(function (line) {
         console.error(line)
       })
-      var error = 'Failed to download ' + filename
+      const error = 'Failed to download ' + filename
       console.error(error)
 
       if (changeExitCodeOnError) {
