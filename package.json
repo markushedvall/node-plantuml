@@ -16,16 +16,16 @@
     "diagram"
   ],
   "dependencies": {
-    "commander": "^2.8.1",
+    "commander": "^9.0.0",
     "node-nailgun-client": "^0.1.0",
-    "node-nailgun-server": "^0.1.4",
+    "node-nailgun-server": "^0.3.0",
     "plantuml-encoder": "^1.2.5"
   },
   "devDependencies": {
     "chai": "^4.x",
-    "mocha": "^5.x",
-    "standard": "^12.x",
-    "shelljs": "^0.8.x"
+    "mocha": "^9.2.0",
+    "shelljs": "^0.8.x",
+    "standard": "^16.0.4"
   },
   "files": [
     "index.js",

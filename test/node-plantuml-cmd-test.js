@@ -1,17 +1,17 @@
 /* global describe it */
-var path = require('path')
-var chai = require('chai')
-var shell = require('shelljs')
+const path = require('path')
+const chai = require('chai')
+const shell = require('shelljs')
 
-var expect = chai.expect
+const expect = chai.expect
 
-var INDEX_JS = path.join(__dirname, '/../index.js')
-var PUML = 'node ' + INDEX_JS
+const INDEX_JS = path.join(__dirname, '/../index.js')
+const PUML = 'node ' + INDEX_JS
 
 describe('node-plantuml CLI', function () {
   describe('#encode', function () {
     it('should encode "A -> B: Hello"', function () {
-      var cli = shell.exec(PUML + ' encode "A -> B: Hello"', { silent: true })
+      const cli = shell.exec(PUML + ' encode "A -> B: Hello"', { silent: true })
       expect(cli.stdout).to.equal('SrJGjLDmibBmICt9oGS0\n')
     })
   })
